@@ -28,7 +28,7 @@ if __name__ == '__main__':
     reset_file = 'reset.csv'
     header_lines = 1
     skip_footer = 0
-    read_voltage = 0.1  # It is assumed that set/reset.csv are current values and so it needs to be scaled by the read voltage to get a conductance
+    read_voltage = 1.0  # It is assumed that set/reset.csv are current values and so it needs to be scaled by the read voltage to get a conductance
     scale = 1e3 # scaling factor for plots
     scale_text = "m"  # "$\mu$" ##scaling factor label for plot labels
     extrapolate = True # if true, extrapolate dG values to G values that were not measured, if false, use the closest measured value
